@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: linear-gradient(to right, #08083c, #1a1a40);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding:  20px 10%;
+  background: #111;
+  color: #ff4c60;
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+/* HERO */
+.hero {
+  height: 50vh;
+  background: linear-gradient(to bottom, #333, #130836);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ff4c60;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff4c60;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+  text-align: center;
+  color: white;
+  ;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ff4c60;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+.grid .skill {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.grid .skill img {
+  width: 30px;
+  height: 30px;
+}
+
+.card, .project {
+  background: #f4f4f4;
+  padding: 30px;
+  flex: 1;
+}
+
+/* MENUICON */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ABOUT */
+.p{
+  font-size: 1.5rem;
+}
+
+/* CONTACT */
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  
+  color: #ff4c60;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 760px) {
+ .nav-links{
+  position: absolute;
+    top: 70px;
+    right: 0;
+    background: #1e293b;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+  .nav-links.active {
+    transform: translateX(0);
+  }
+  .section {display: block;}
+  .menu-icon {display: flex;} 
+  .grid {flex-direction: column;}
+ 
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
