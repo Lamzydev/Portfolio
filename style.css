@@ -180,7 +180,7 @@ footer {
 
 
 /* ── RESPONSIVE ── */
-@media (max-width: 760px) {
+@media (max-width: 500px) {
  .nav-links{
   position: absolute;
     top: 70px;
